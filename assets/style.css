@@ -200,6 +200,92 @@ nav .logo a {
     display:none;
   }
 
+  /*--- Books section---- */
+
+ .books{
+    display:grid;
+    width:fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap:3rem;
+    grid-column-gap:3rem;
+    margin:6rem;
+    padding:1rem;
+    margin:0 auto;
+    
+   }
+   section h1{
+    background-color:aliceblue;
+    margin-top:3rem;
+    padding:3rem;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-style: italic;
+  }
+  .bottom {
+    margin-top:5rem;
+  }
+  .box{
+    width:350px;
+    height:fit-content;
+    border:1px solid #ddd;
+    margin:1rem auto;
+    margin-top:3rem;
+    position:relative;
+    box-shadow:1px 3px 4px #333;
+    background-blend-mode: blur;
+    background-color:#f18a30fe;
+  }
+  .box-title{
+    padding:0.5rem;
+    background-color:hsl(0,50%,50%);
+    color:#fff;
+  }
+  .box-title h2{
+    font-size:2rem;
+    font-weight:300;
+    letter-spacing:1px;
+    transition:letter-spacing 1s ease-in;
+  }
+  .box-content{
+    font-size:1rem;
+    font-weight:350;
+    padding:2rem;
+    width:280px;
+    height:500px;
+    color:#000;
+  }
+  .box-content img{
+    height:150px;
+    width:40%;
+    margin:0 1rem 1rem 0;
+    float:left;
+  }
+  .box-content img:hover{
+    transform:scale(1.2);
+  }
+  
+  .box-footer{
+    padding:1rem 0.5rem;
+    background-color:grey;
+    color:#fff;
+    position:absolute;
+    bottom:-1rem;
+    width:100%;
+    box-shadow:1px 3px 4px #333;
+    border:1px solid #ddd;
+    transform:translateY(0rem);
+  }
+  .box:hover .box-footer{
+    transform:translateY(5rem);
+  }
+  .box-footer p{
+    font-size:1rem;
+    line-height:1rem;
+    font-weight:100;
+    letter-spacing:2px;
+  }
+
   /* ---- Footer ----*/
 
 .footer{
@@ -267,6 +353,25 @@ nav .logo a {
     .menu-button{
       display:block;
     }
+    .book{
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .books{
+        display:block;
+        margin: 0 auto;
+      }
+      .box{
+        margin-top:150px;
+      }
+     section h1{
+      margin-bottom:-5rem;
+      text-align: center;
+      }
+      section .bottom{
+        font-size:22px;
+        margin-bottom:2rem;
+      }
     .footer{
         display:flex;
         flex-direction: column;

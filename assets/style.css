@@ -130,3 +130,41 @@ nav .logo a {
     border-radius:10px;
     letter-spacing: 2px;
   }
+
+  /*------ Hamburger menu ------*/
+
+.fa-bars:hover {
+    transform:scale(0.8);
+  }
+  .menu-button {
+    display:none;
+  }
+  
+  /* ---- X closing menu -----*/
+  .sidebar:first-child .fa-x {
+    position:absolute;
+    top:10px;
+    left:8px;
+    background-color:transparent;
+  }
+  .sidebar:first-child .fa-x:hover{
+    transform:scale(.8);
+  }
+  
+
+  /* ---- screen size less than 800px -- */
+@media(max-width:800px){
+    .hideOnMobile{
+      display:none;
+    }
+    .menu-button{
+      display:block;
+    }
+}
+  
+  /* ---- screen size less than 450px --- */
+  @media(max-width:400px){
+    .sidebar{
+      width:100%;
+    }
+  }

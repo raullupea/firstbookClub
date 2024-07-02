@@ -153,14 +153,11 @@ nav .logo a {
   /* ------- Main ------ */
 
   main{
-    min-height: 110vh;
+    min-height:100vh;
     background-image:linear-gradient(rgb(201, 222, 217),rgb(214, 209, 143));
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
     background-attachment: fixed;
     opacity:1;
-    margin-bottom:10rem;
+    margin-bottom:0;
   }
   .menu-button {
     display:none;
@@ -202,7 +199,65 @@ nav .logo a {
   #invisible-text{
     display:none;
   }
+
+  /* ---- Footer ----*/
+
+.footer{
+    margin-top:auto;
+    background-color:#ddd;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0px -2px 3px grey;
+  }
+  .social{
+    padding:1rem;
+    font-size:2rem;
+    margin-left:2rem;
+    }
+  .social a{
+    margin:20px;
+    color:#333;
+    }
+  .list{
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+    overflow-y: hidden;
+    list-style-type: none;
+    justify-content: flex-start;
+    }
   
+  .list a{
+    font-size:1.2rem;
+    letter-spacing: 1px;
+    font-weight:400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#333;
+   }
+   .list a:hover{
+    color:#958e8e;
+     }
+  
+  .copyright{
+    margin-right:5rem;
+    font-size:1.1rem;
+    letter-spacing: 1px;;
+    font-weight: 500;
+    text-shadow:2px 2px 2px grey;
+  }
+  
+  /* ---- screen size  1100px ---- */
+@media(max-width:1100px){
+    .footer{
+      overflow:hidden;
+    }
+      .list{
+        display:none;
+      }
+    }
 
   /* ---- screen size less than 800px -- */
 @media(max-width:800px){
@@ -212,6 +267,21 @@ nav .logo a {
     .menu-button{
       display:block;
     }
+    .footer{
+        display:flex;
+        flex-direction: column;
+      }
+      .list{
+          display:none;
+        }
+        .social{
+          margin:0;
+        }
+        .copyright{
+          margin-right:10px;
+          background-color: red;
+         
+        }
 }
   
   /* ---- screen size less than 450px --- */
